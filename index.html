@@ -24,7 +24,7 @@
             <a href="#"><span>Изминить название</span></a> -->
         
    
-    <ul class="list">
+    <ul class="list" v-if="items.length">
         <li 
         class="list__item"
          v-for="(item , i) in items"
@@ -37,6 +37,8 @@
              </li> -->
     </li>
     </ul>
+
+    <h3 v-else>Список пустой</h3>
         
 
       </div>
