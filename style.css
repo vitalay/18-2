@@ -22,6 +22,16 @@ background: #155153;
   
 }
 
+.list {
+    list-style: none; /* Убираем маркеры */
+    margin: 0;
+    padding: 0;
+}
+
+.list__item {
+    margin-bottom: 15px; /* Настройка отступов между элементами */
+}
+
 .wrapper{
     position: fixed;
     top: 50%;
