@@ -23,12 +23,14 @@
          <div class="wrapper" @click="titel = 'Теперь я другое название'">
             <a href="#"><span>Изминить название</span></a> -->
         
-   
+   <div class="form-contpol">
+    <input type="text" @keyup.enter="addItem($event)" ref="myInput"> 
+   </div>
     <ul class="list" v-if="items.length">
         <li 
         class="list__item"
-         v-for="(item , i) in evenItems"
-         @click="items.splice(i, 1)"
+         v-for="(item , i) in items"
+         @click.right.prevent="remove(i), log(item)"
          :key="item"
          >
         <strong>{{ item }}</strong>&nbsp;
