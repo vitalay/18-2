@@ -8,7 +8,7 @@ Vue.createApp({
             lastName: 'Doe',
             age: 30
         },
-        items: [1, 2, 3, 4, 5]
+        items: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         }
     }
 }).mount('#app')
