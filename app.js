@@ -1,7 +1,9 @@
 Vue.createApp({
     data() {
         return {
-            message: 'Hello Vue!'
+            myHtml:  '<h1>Vue 3 APP</h1>',
+
+            titel: 'Hello Vue!'
         }
     }
 }).mount('#app')
